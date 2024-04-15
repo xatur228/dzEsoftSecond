@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Card from './Card';
+import Card from './components/Card';
 import './App.css'; 
-import MyCard from './MyCard';
-import SkillCard from './SkillCard';
-import TechCard from './TechCard';
+import MyCard from './components/MyCard';
+import SkillCard from './components/SkillCard';
+import TechCard from './components/TechCard';
 
 const App = () => {
     const [skillCards, setSkillCards] = useState([
@@ -14,21 +14,27 @@ const App = () => {
     ]);
 
     const [techCards, setTechCards] = useState([
-        { title: "Я ХОЧУ ПЛАВАТЬ", image: '/images/image5.jpg', about: 'Спортивное питание', color: 'lightpink' },
-        { title: "Tech2", image: '/images/image6.jpg', about: 'some2' },
-        { title: "Tech3", image: '/images/image7.jpg', about: 'some3' },
-        { title: "Tech4", image: '/images/image8.jpg', about: 'some4' }
+        { index2:0,title: "Я хочу научиться работать с базами данных", image: '/images/image5.jpg', about: 'Мне очень интересно узнать и попробовать на деле как они работают', color: 'lightpink' },
+        { index2:1,title: "Я хочу научиться работать с сервер", image: '/images/image6.jpg', about: 'Мне очень интересно работать с node.js и пробовать что то новое' },
+        { index2:2,title: "Я хочу научиться работать в команде над проектом", image: '/images/image7.jpg', about: 'Все программисты разрабатывая проект разрабатывают его в командах и я хочу узнать и научиться тому как это происходит' },
+        { index2:3,title: "Я хочу разобраться с тем что такое докер...", image: '/images/image8.jpg', about: 'Если честно выглядит это как технология для сеньёров и только' },
+        { index2:4,title: "Я хочу разобраться с тем что такое докер...", image: '/images/image8.jpg', about: 'Если честно выглядит это как технология для сеньёров и только' },
+        { index2:5,title: "Я хочу разобраться с тем что такое докер...", image: '/images/image8.jpg', about: 'Если честно выглядит это как технология для сеньёров и только' },
+        { index2:6,title: "Я хочу разобраться с тем что такое докер...", image: '/images/image8.jpg', about: 'Если честно выглядит это как технология для сеньёров и только' },
+        { index2:7,title: "Я хочу разобраться с тем что такое докер...", image: '/images/image8.jpg', about: 'Если честно выглядит это как технология для сеньёров и только' },
+        { index2:8,title: "Я хочу разобраться с тем что такое докер...", image: '/images/image8.jpg', about: 'Если честно выглядит это как технология для сеньёров и только' },
+        { index2:9,title: "Я хочу разобраться с тем что такое докер...", image: '/images/image8.jpg', about: 'Если честно выглядит это как технология для сеньёров и только' }
     ]);
 
     return (
         <div className="app-container">
-            <MyCard className="my-card" />
+            <MyCard className="my-card"/>
             <div className="skill-cards-container">
                 {skillCards.map((skill, index) => (
                     <SkillCard key={index} title={skill.title} image={skill.image} about={skill.about} className="skill-card" />
                 ))}
             </div>
-            <img src='/images/monkey.jpg' alt="portlandLogo" />
+           
             <div className="tech-cards-container">
                 {techCards.map((techs, index2) => (
                     <TechCard key={index2} title={techs.title} image={techs.image} about={techs.about} className="tech-card" />
@@ -37,7 +43,4 @@ const App = () => {
         </div>
     );
 }
-
-
-
 export default App;
