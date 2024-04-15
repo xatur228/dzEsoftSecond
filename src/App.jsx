@@ -14,12 +14,12 @@ const App = () => {
     ]);
 
     const [techCards, setTechCards] = useState([
-        { index2:0,title: "Я хочу научиться работать с базами данных", image: '/images/image5.jpg', about: 'Мне очень интересно узнать и попробовать на деле как они работают', color: 'lightpink' },
+        { index2:0,title: "Я хочу создать проект", image: '/images/image5.jpg', about: 'Я хочу обретси знания фуллстак джуна на опыте разработки проекта', color: 'lightpink' },
         { index2:1,title: "Я хочу научиться работать с сервер", image: '/images/image6.jpg', about: 'Мне очень интересно работать с node.js и пробовать что то новое' },
         { index2:2,title: "Я хочу научиться работать в команде над проектом", image: '/images/image7.jpg', about: 'Все программисты разрабатывая проект разрабатывают его в командах и я хочу узнать и научиться тому как это происходит' },
-        { index2:3,title: "Я хочу научиться работать с ДБ", image: '/images/image8.jpg', about: 'SQL очень важен для разработчика а так как я хочу стать крутым мне это очень очень нужно' },
+        { index2:3,title: "Я хочу научиться работать с БД", image: '/images/image8.jpg', about: 'SQL очень важен для разработчика а так как я хочу стать крутым мне это очень очень нужно' },
         { index2:4,title: "Я хочу научиться работать с TypeScript", image: '/images/image8.jpg', about: 'TypeScript  для frontend-разработки, то есть создания той части приложений, с которой непосредственно контактирует пользователь' },
-        { index2:5,title: "", image: '/images/image8.jpg', about: '' },
+        { index2:5,title: "Я хочу", image: '/images/image8.jpg', about: '' },
         { index2:6,title: "", image: '/images/image8.jpg', about: '' },
         { index2:7,title: "", image: '/images/image8.jpg', about: '' },
         { index2:8,title: "", image: '/images/image8.jpg', about: '' },
